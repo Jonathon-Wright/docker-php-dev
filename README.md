@@ -18,7 +18,7 @@ This container also ships with Nginx, which integrates to the right PHP-FPM vers
 
 Start the container:
 
-    $ docker run -p 80:80 -v ~/your-app:/var/www/your-app -d "eriksencosta/php-dev:latest"
+    $ docker run -p 80:80 -v ~/your-app:/var/www/your-app -d "jonathon-wright/php-dev:latest"
 
 This will expose your application through port 80, which you can then access in your web browser with the address `http://localhost` (or an IP address if you're using Boot2Docker).
 
@@ -28,7 +28,7 @@ the Nginx access logs.
 To get the real value of the image and switch between the different PHP versions, start the container in interactive
 mode:
 
-    $ docker run -t -i -p 80:80 -v ~/your-app:/var/www "eriksencosta/php-dev:latest" /bin/bash
+    $ docker run -t -i -p 80:80 -v ~/your-app:/var/www "jonathon-wright/php-dev:latest" /bin/bash
 
 Use the `phpenv` command to switch between the installed PHP versions:
 
