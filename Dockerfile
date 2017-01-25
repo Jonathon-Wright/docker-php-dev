@@ -1,6 +1,6 @@
 FROM debian:wheezy
 
-MAINTAINER Eriksen Costa <eriksencosta@gmail.com>
+MAINTAINER Jonathon Wright <jonathon_wright@gmail.com>
 
 COPY ansible-php-dev /opt/ansible
 
